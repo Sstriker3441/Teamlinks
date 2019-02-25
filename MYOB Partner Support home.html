@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<title> My Partner Support Quick Links</title>
+<script>
+		var intervalID = setInterval( function() {
+			location.reload();
+		}, 300000);
+
+	</script>
+</head>
+
+<style>
+
+	body{
+	background : linear-gradient(to right, #6100A5 , #EC0677);
+    background-blend-mode: screen;
+}
+	h1:hover{color: transparent;}
+
+		color: transparent;
+		background-color : transparent;
+		border-color : transparent;
+		outline-color : transparent;
+		.hide, .hide:hover, .hide:active, .hide:focus {}
+
+button {
+	background-color:transparent;
+	border-color:transparent;
+}
+
+a {
+	color:white
+}
+
+a:hover{
+	color:yellow;
+}
+
+</style>
+
+<!--script>
+
+	jQuery(document).ready(function(){
+			console.log("Ready");
+			jQuery("#tier").on("change", function() {
+			console.log("Changed");
+    let check = jQuery("#tier option:selected").val();
+    console.log(check);
+    if (check == "admin"){
+      jQuery("#admin2").css({"display":"block"});
+    }
+		else if(check == "admin"){
+      jQuery("#admin2").css({"display":"none"});
+	  }
+		else if(check2 == "t1"){
+      jQuery("#T1").css({"display":"block"});
+	  }
+	  else if(check == "tx"){
+      jQuery("#T1").css({"display":"none"});
+	  }
+  });
+});
+
+</script-->
+
+<body>
+
+<img src="data:image/png;base64,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" style=" background-clolor:transparent; position:absolute;top:0px;right:0px;">
+
+
+<h1 style="font-size:400%; color:white; hover:transparent;">Partner Home!</h1>
+
+<b><p style="color:White">
+<q>
+These links here will provide you with all the necessary websites that you will need threw out your stay with us!
+</q><br></p></b>
+
+<!--select value="tier" id="tier" style= "border:transparent; background-color:transparent;color:transparent; position:absolute; top:3px; left:47px">
+	<option value="tx" id="tx";>Tier</option>
+	<option value="t1" id="t1";>Tier 1</option>
+	<option value="bronze" id="bronze";>Tier 2 Bronze</option>
+	<option value="silver" id="silver";>Tier 2 Silver</option>
+	<option value="gold" id="gold";>Tier 2 Gold</option>
+	<option value="admin"id="admin";>Admin</option>
+</select>
+<!--select style="border:transparent; background-color:transparent;color:transparent; position:absolute; top:3px; left:190px">
+	<option>Kangaroo</option>
+	<option>Kookaburras</option>
+	<option>Wambats</option>
+	<option>TimTam</option>
+	<option>Dropbears</option>
+</select-->
+
+
+
+<table id="admin2"; style="color:white; display:non;">
+	<tr>
+		<th>Day to Day</th><!--th>Super</th--><th>Price/Sales</th><th>Admin</th><th>Partners</th>
+	</tr>
+
+
+		<tr>
+			<td><button style=  type="button" value="kb"><a href="https://myob.service-now.com/sme/kbhome.do" target="_blank">KB</a></button><!--day to day--></td>
+			<!--td><button type="button"><a href="https://super.myob.com/support/ " target="_blank"> PaySuper </a></button><!--Super--><!--/td-->
+			<td><button type="button"><a href="http://intranet.myob.com/ops/nz/bd/exchange/Documents/ANZ%20SME%20Phone%20List.xlsx" target="_blank"> MYOB Internal phone list</a></button><!--Price--></td>
+			<td><button type="button"><a href="https://cloudsurvey.speechnetworks.com.au/index.cfm?event=newDashboard.view" target="_blank"> Center Cx</a></button><!--admin--></td>
+			<td><button type="button"><a href="https://myobconfluence.atlassian.net/wiki/spaces/SPS/pages" target="_blank">Confluence</a></button><!--Partner--></td>
+
+</tr>
+		<tr>
+			<td><button type="button"><a href="https://www.myob.com/au/support/download-accountright" target="_blank"> Download Latest Software (Maybe) </a></button><!--day to day--></td>
+			<!--td><button type="button"><a href="https://www.superchoice.com.au/myob " target="_blank"> Super Portal</a></button><!--super></td-->
+			<td><button type="button"><a href="http://intranet.myob.com/ops/nz/bd/exchange/Documents/ANZ%20price%20list%202017.xlsx" target="_blank"> MYOB Internal price list</a></button><!--Price--></td>
+			<td><button type="button"><a href="http://aumelimpdcp01.myob.myobcorp.net:7001/wfo/control/signin " target="iexplore.exe"> i360 Internet Explora only </a></button><!--admin--></td>
+			<td><button type="button"><a href="https://admin.essentials.myob.com.au/Admin/Support/SupportHome.aspx" target="_blank"> LA admin </a></button><!--partner--></td>
+
+</tr>
+		<tr>
+			<td><button type="button"><a href="https://my.myob.com.au/Pages/Default.aspx" target="_blank"> my.myob</a></button><!--day to day--></td>
+			<!--td><button type="button"><a href="https://super.myob.com/super_products.html" target="_blank"> Super Funds List</a></button><!--Super></td-->
+			<td><button type="button"><a href="https://www.myob.com/au/business/training-events/training-courses-pricing-1258090678511" target="_blank"> MYOB Training Price and Content </a></button><!--price--></td>
+			<td><button type="button"><a href="https://datafile.myob.com.au/" target="_blank"> FTP </a></button><!--admin--></td>
+			<td><button type="button"><a href="https://partner.myob.com/" target="_blank"><span>Partner Dashboard</span></a></button></td><br><!--Partner-->
+
+		</tr>
+		<tr>
+			<td><button type="button"><a href="https://www.myob.com/au/accounting-software/bankfeeds/feeds" target="_blank"> Bankfeed List</a></button> <!--day to day--></td>
+			<td><button type="button"><a href="https://www.employerpay.com.au/myobpaysuper" target="_blank"> Pay Super Engin</a></button> <!--day to day--></td>
+			<td><button type="button"><a href="https://www.myob.com/au/business/training-events/training-courses-pricing/myob-training-1257829274506" target="_blank"> MYOB Training Locations</a></button><!--sales--></td>
+			<td><button type="button"><a href="https://www.myob.com/au/support/data-file-repair-services" target="_blank"> Data File Repair</a></button><!--admin--></td>
+			<!--td><button type="button"><a href="https://myobconfluence.atlassian.net/wiki/spaces/SPS/pages/312312092/Partner+Support+Referrals" target="_blank">Referrals</a></button><!--partner--><!--/td-->
+
+		</tr>
+		<tr>
+			<td><button type="button"><a href="https://www.myob.com/au/accounting-software/accountright" target="_blank"> MYOB Account Right</a></button><!--day to day--></td>
+			<!--td><button type="button"><a href="https://helpme.myob.com/hc/en-us/restricted?return_to=https%3A%2F%2Fhelpme.myob.com%2Fhc%2Fen-us" target="_blank"> Help me ticket</a></button><!--Super--><!--/td-->
+			<td><button type="button"><a href="https://store.myob.com.au/pages/payments.aspx" target="_blank"> MYOB Payments (Our Invoices)</a></button><!--sales--></td>
+			<td><button type="button"><a href="https://my.account.myob.com/?ajs_aid=045628fc-2b48-4337-ad53-f7704cfdf020&_ga=2.161104189.1427422782.1520220538-507520774.1465272808" target="_blank"> 2FA Security Centre </a></button><!--partner--></td>
+
+</tr>
+		<tr>
+			<td><button type="button"><a href="https://www.myob.com/au/accounting-software/accountedge" target="_blank"> MYOB Account Edge</a></button><!--day to day--></td>
+			<!--td><button type="button"><a href="http://superfundlookup.gov.au/Index.aspx" target="_blank"> Super Look up</a></button><!--super--><!--/td-->
+			<td><button type="button"><a href="http://developer.myob.com/program/developer-program-details/" target="_blank">Developer Program Levels</a></button></td><!--sales-->
+			<td><button type="button"><a href="http://developer.myob.com/" target="_blank"> MYOB api Developer </a></button><!--admin--></td>
+			<td><button type="button"><a href="https://management-console.ledger-cache.myob.com/" target="_blank"> ledger chache</a></button><!--partner--></td>
+</tr>
+		<tr>
+			<td><button type="button"><a href="https://www.myob.com/au/accounting-software/essentials" target="_blank"> MYOB Essentials</a></button><!--day to day--></td>
+			<!--td><button type="button"><a href="https://csu.myob.myobcorp.net/M-Powered_csu/index.jsp" target="_blank"> CSU </a></button><!--Super--><!--/td-->
+			<td></td>
+			<td><button type="button"><a href="https://admin.account.myob.com/#/Users/" target="_blank"> 2FA and My.myob Pass Reset </a></button><!--admin--></td>
+			<td><button type="button"><a href="https://myobconfluence.atlassian.net/wiki/spaces/SPS/pages/399016173/All+Part+Codes+for+Partners" target="_blank"> parnter codes </a></button><!--partner-->
+			</td>
+		</tr>
+
+		<tr>
+			<td><button type="button"><a href="https://www.myob.com/au/support/product-migration/move-to-essentials" target="_blank"> migrate to essentials</a></button><!--day to day--></td>
+			<td></td>
+			<td></td>
+			<td><button type="button"><a href="https://community.myob.com/t5/short/link/td-p/532061" target="_blank"> Live Monitor</a></button><!--Admin--></td>
+
+</tr>
+		<tr>
+			<td><button type="button"><a href="https://infocentral.myob.com.au/BaseForm.aspx?_req=Documents.ShowPaySlips&Param1=1&key=7" target="_blank">MYOB Info Central</a></button><!--dya to day--></td>
+			<td></td>
+			<td></td>
+			<td></td>
+
+</tr>
+		<tr>
+			<td><button type="button"><a href="https://www.myob.com/au/addons/" target="_blank"> Addons</a></button><!--day to day--></td>
+			<td></td>
+			<td></td>
+			<td></td>
+
+
+</tr>
+		<tr>
+			<td><button type="button"><a href="https://www.myob.com/au/contact-us" target="_blank"> Live Chat</a></button><!--day to day-->	</td>
+			<td></td>
+			<td></td>
+			<td></td>
+
+</tr>
+		<tr>
+			<td><button type="button"><a href="https://myob.com.au" target="_blank"> MYOB</a></button><!--day to day--></td>
+			<td></td>
+			<td></td>
+			<td></td>
+
+</tr>
+		<tr>
+			<td><button type="button"><a href="https://myob.service-now.com/sme/sr.do?page=sr" target="_blank"> DFR</a></button><!--day to day--></td>
+			<td></td>
+			<td></td>
+			<td></td>
+
+</tr>
+		<tr>
+			<td><button type="button"><a href="https://myobo365.sharepoint.com/sites/SMECXTicketing/SitePages/notify.aspx" target="_blank"> SME notifications</a></button><!--day to day--></td>
+			<td></td>
+			<td></td>
+			<td></td>
+
+</tr>
+		<tr>
+			<td><button type="button"><a href="https://myobpit.zendesk.com/hc/en-us?flash_digest=44e45f860d9d08808b5d2210b7661402c8f15003  " target="_blank"> ZenDesk </a></button><!--day to day--></td>
+			<td></td>
+			<td></td>
+			<td></td>
+
+		</tr>
+			<!--td><button type="button"><a href="http://intranet.myob.com/ops/au/bd/clientservices/Client%20Support/Kookaburra/default.aspx" target="_blank"> Team Site</a></button><!--day to day--><!--/td-->
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><button type="button"><a href="http://essentials.myob.com.au" target="_blank"> Essentials Log In</a></button><!--day to day--></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><button type="button"><a href="https://myob.service-now.com/kb_view_article.do?sys_kb_id=d0a8523f6f1842007222b117eb3ee452&sysparm_language=&sysparm_nameofstack=&sysparm_kb_search_table=&sysparm_search=back%20up%20retrieval"target="_blank">KB0012849 - AccountRight online DFR - Server backup retrieval</a></button></td><!--back up retrieval-->
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><button type="button"><a href="http://aussieoutages.com/"target="_blank">aussieoutages</a></button></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><button type="button"><a href="https://www.myob.com/au/accountants-and-partners/partner-search/" target="_blank">partner search</a></button></td><!--day to day-->
+		</tr>
+		<tr>
+			<td><button type="button"><a href="https://myobpit.zendesk.com/hc/en-us/requests/new?flash_digest=23bd9db59a832b63b975f5bdceaa3fffc980ca10&ticket_form_id=706128" target="_blank">PIT</a></button></td><!--day to day-->
+		</tr>
+
+</table>
+
+<br><u><b><a style="color:white"; href="mailto:james.smith@myob.com?subject=ideas for the Partner link sheet">Email me with any ideas for the website. This is a link!</a></u></b>
+<p style="color:white;">go see james if there is something that you want to change</p>
+
+
+<!--iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd5A0v5WBwoIZOcf36U99zCJlIIVYu1qQrYadIUk3glulu5Lw/viewform?embedded=true" width="500" height="1100" frameborder="0" marginheight="0" marginwidth="0">Please wait</iframe-->
+<iframe src="https://goo.gl/forms/namTwxz0YC3GpOnt2" scrolling="yes" width="550px" height="950px" frameborder="1" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation" class="conf-macro output-block" data-hasbody="true" data-macro-name="iframe" data-macro-id="fca13c6f-4605-4e57-969d-2c2a4b8b93da">
+
+</iframe>
+
+
+<script>
+	console.log("this is a partner support page made by james in the partner team");
+</script>
+
+
+
+
+
+
+<!--Scrolling text-->
+<!-- <div value="fotter_container">
+	<div value="footer">
+		<table width="60%"  value="marqueetexttable" class="queued" style="position: absolute; bottom:0px;right:0px;">
+			<tbody >
+				<tr>
+					<td>
+						</td>
+							<td width="100%">
+<!--scrolling-->
+								<!-- <font style="font-size:40pt;">
+									<marquee>
+										<div  value="marqueetext" style="color:white;">
+										<img src="mhw_anjanath_render_001.png" style="width:500px;height:500px; border-color:transparent;">
+										</div>
+									</marquee>
+								</font>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div> --> -->
+
+
+	<!--this is a password table-->
+<!--table>
+	<tr>
+		<td>
+			<input type="text" class="inputtext" name="usr" value="use" tabindex="1" data-testvalue="royal_user">
+		</td>
+		<td>
+			<input type="password" class="inputtext" name="psw" value="psw" tabindex="2"  data-testvalue="royal_pass">
+		</td>
+		<td>
+			<label class="uibutton uibuttonconfirm" value="login" name="login">
+			<input value="Log In" tabindex="4" data-testvalue="royal_login_button" type="submit" value="u_0_3">
+			</label>
+		</td>
+	</tr>
+</table>
+
+
+</script-->
+<!--script>
+$(document).ready(function(){
+    $("hide").click(function(){
+        $("tier").hide();
+    });
+    $("show").click(function(){
+        $("tier").show();
+    });
+});
+</script-->
+</body>
+</html>
